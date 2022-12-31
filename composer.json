@@ -1,5 +1,5 @@
 {
-    "name": "djdivesh007/laravel-compass",
+    "name": "davidhsianturi/laravel-compass",
     "description": "An elegant REST assistent for the Laravel framework.",
     "keywords": [
         "laravel",
@@ -13,13 +13,16 @@
         "name": "David H. Sianturi",
         "email": "davidhsianturi@gmail.com"
     }],
-
+    "repositories": [{
+        "type": "git",
+        "url": "https://github.com/djdivesh007/documentarian.git"
+    }],
     "require": {
         "php": "^7.3|^8.0",
         "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/routing": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-        "djdivesh007/documentarian": "master"
+        "mpociot/documentarian": "dev-master"
     },
     "require-dev": {
         "laravel/legacy-factories": "^1.0.5",
@@ -37,6 +40,9 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
         "laravel": {
             "providers": [
                 "Davidhsianturi\\Compass\\CompassServiceProvider"
